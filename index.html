@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+	<title>Calendar</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<article>
+		<div class="header-page">
+				<input type="button" name="add" class="add-btn" value="Добавить">
+				<input type="button" name="add" class="update-btn" value="Обновить">
+
+				<img src="images/icon-search.png" class="search-img">
+				<input type="text" name="cearch-txt" placeholder="Событие, дата или участник" class="text-field">
+		</div>
+		<div class="clendar-container">
+			<label id="prev-btn" onclick="selectPrevMonth()">&#9668</label>
+			<output id="dateView" class="date-view"></output>
+			<label id="next-btn" onclick="selectNextMonth()">&#9658</label>
+			<label id="today">Сегодня</label>
+
+
+			<table id="calendarTable"> 
+			<tbody>
+			<tr>
+				<td>Понедельник,<label id="cell1"></label></td>
+				<td>Вторник,	<label id="cell2"></label></td>
+				<td>Среда,		<label id="cell3"></label></td>
+				<td>Четверг,	<label id="cell4"></label></td>
+				<td>Пятница,	<label id="cell5"></label></td>
+				<td>Суббота,	<label id="cell6"></label></td>
+				<td>Воскресенье,<label id="cell7"></label></td>
+			</tr>
+			<tr>
+				<td id="cell8"></td>
+				<td id="cell9"></td>
+				<td id="cell10"></td>
+				<td id="cell11"></td>
+				<td id="cell12"></td>
+				<td id="cell13"></td>
+				<td id="cell14"></td>
+			</tr>
+			<tr>
+				<td id="cell15"></td>
+				<td id="cell16"></td>
+				<td id="cell17"></td>
+				<td id="cell18"></td>
+				<td id="cell19"></td>
+				<td id="cell20"></td>
+				<td id="cell21"></td>
+			</tr>
+			<tr>
+				<td id="cell22"></td>
+				<td id="cell23"></td>
+				<td id="cell24"></td>
+				<td id="cell25"></td>
+				<td id="cell26"></td>
+				<td id="cell27"></td>
+				<td id="cell28"></td>
+			</tr>
+			<tr>
+				<td id="cell29"></td>
+				<td id="cell30"></td>
+				<td id="cell31"></td>
+				<td id="cell32"></td>
+				<td id="cell33"></td>
+				<td id="cell34"></td>
+				<td id="cell35"></td>
+			</tr>
+			<tr>
+				<td id="cell36"></td>
+				<td id="cell37"></td>
+			</tr>
+		</tbody>
+
+			
+		</table>
+		</div>
+	</article>
+	<script type="text/javascript" language="javascript" src="scripts/calendar.js"></script>
+</body>
+</html>
